@@ -377,7 +377,7 @@ function srt(tab,k){
   else{s.k=k;s.d=k==='completeness'||k==='avg_rating'||k==='response_rate'?'asc':'desc';}
   document.querySelectorAll(`#t-${tab} thead th`).forEach(t=>t.classList.remove('sorted'));
   const th=document.getElementById(`th-${tab}-${k}`);
-  if(th){th.classList.add('sorted');th.querySelector('.sarr').textContent=s.d==='asc'?'&#8593;':'&#8595;';}
+  if(th){th.classList.add('sorted');th.querySelector('.sarr').textContent=s.d==='asc'?'↑':'↓';}
   rT(tab);
 }
 
